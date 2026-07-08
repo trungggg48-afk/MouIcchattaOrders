@@ -1,1 +1,9 @@
-
+name: MouIcchattaOrders
+version: 1.0
+main: me.example.myplugin.Main
+api-version: '1.21'
+author: md
+description: Plugin riêng đầu tiên
+commands:
+  hello:
+    description: Test command
