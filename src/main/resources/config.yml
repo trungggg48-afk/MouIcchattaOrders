@@ -1,1 +1,111 @@
+settings:
+  prefix: "&6&lORDER &8» &f"
+  use-confirm-menu: true
+  close-after-purchase: true
 
+sounds:
+  open-menu: "BLOCK_CHEST_OPEN"
+  click: "UI_BUTTON_CLICK"
+  confirm: "ENTITY_PLAYER_LEVELUP"
+  cancel: "ENTITY_VILLAGER_NO"
+
+messages:
+  no-permission: "&cBạn không có quyền dùng lệnh này."
+  player-only: "&cLệnh này chỉ dùng trong game."
+  bought-title: "&aĐã chọn đơn hàng!"
+  bought-subtitle: "&fKiểm tra chat để xem hướng dẫn"
+  bought-message:
+    - "&8&m--------------------------------"
+    - "&6Bạn đã chọn: &e%display%"
+    - "&7Giá: &f%price%"
+    - "&7Link mua: &b%link%"
+    - "&7Mã đơn: &f%id%"
+    - "&8&m--------------------------------"
+  confirm-message: "&aBạn đã xác nhận đơn hàng &e%display%"
+
+menu:
+  title: "&8ꜱᴛᴏʀᴇ • ᴍᴏᴜɪᴄᴄʜᴀᴛᴛᴀ"
+  size: 27
+
+  filler:
+    enabled: true
+    material: "BLACK_STAINED_GLASS_PANE"
+    name: " "
+
+  items:
+    rank:
+      slot: 10
+      material: "NETHER_STAR"
+      display: "&6Mua Rank"
+      price: "Tùy gói"
+      link: "https://yourstore.com/rank"
+      console-commands:
+        - "say %player% vừa chọn mua Rank!"
+      lore:
+        - "&7Mở danh sách các rank của server"
+        - "&7và hướng dẫn cách mua."
+        - ""
+        - "&eGiá: &fTùy gói"
+        - "&a▶ Nhấn để đặt"
+
+    claimblocks:
+      slot: 12
+      material: "GRASS_BLOCK"
+      display: "&aMua ClaimBlocks"
+      price: "10.000 / gói"
+      link: "https://yourstore.com/claimblocks"
+      console-commands:
+        - "say %player% vừa chọn mua ClaimBlocks!"
+      lore:
+        - "&7Mua thêm đất để claim."
+        - ""
+        - "&eGiá: &f10.000 / gói"
+        - "&a▶ Nhấn để đặt"
+
+    key:
+      slot: 14
+      material: "TRIPWIRE_HOOK"
+      display: "&bMua Key"
+      price: "Tùy loại key"
+      link: "https://yourstore.com/key"
+      console-commands:
+        - "say %player% vừa chọn mua Key!"
+      lore:
+        - "&7Mua key crate đặc biệt."
+        - ""
+        - "&eGiá: &fTùy loại"
+        - "&a▶ Nhấn để đặt"
+
+    support:
+      slot: 16
+      material: "BOOK"
+      display: "&dThuê làm plugin"
+      price: "Liên hệ"
+      link: "https://yourstore.com/support"
+      console-commands:
+        - "say %player% vừa chọn thuê làm plugin!"
+      lore:
+        - "&7Nhận làm plugin / fix plugin / setup server."
+        - ""
+        - "&eGiá: &fLiên hệ"
+        - "&a▶ Nhấn để đặt"
+
+confirm-menu:
+  title: "&8Xác nhận mua"
+  size: 27
+
+  confirm-item:
+    slot: 11
+    material: "LIME_WOOL"
+    name: "&a&lXÁC NHẬN"
+    lore:
+      - "&7Xác nhận chọn đơn hàng này"
+
+  cancel-item:
+    slot: 15
+    material: "RED_WOOL"
+    name: "&c&lHỦY"
+    lore:
+      - "&7Không mua nữa"
+
+  preview-slot: 13
